@@ -1,0 +1,35 @@
+.numbers-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.numbers-grid .number {
+	flex: 0 0 20%;
+}
+
+.numbers-grid .number a {
+	display: block;
+	margin: 1rem;
+	border: 1px solid #333;
+	border-radius: 9999px;
+	color: #333;
+	text-decoration: none;
+}
+
+.numbers-grid .number.active a {
+	background-color: #333;
+	color: #FFF;
+}
+
+.numbers-grid .number a:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.numbers-grid .number a span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
